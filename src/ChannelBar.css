@@ -1,0 +1,117 @@
+.channelBar {
+	display: flex;
+	flex-direction: column;
+	flex: 0.25;
+	height: 100vh;
+	background-color: #2f3135;
+}
+
+.channelBar__top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	background-color: #2f3135;
+	color: white;
+	border-bottom: 3px solid #26282c;
+}
+
+.channelBar__top:hover{
+	background-color: #40464b;
+	cursor: pointer;
+}
+
+.channelBar__channels {
+	flex: 1;
+	overflow: scroll;
+}
+
+/* Hides scroll bar for Chrome, Safari, and Opera */
+.channelBar__channels::-webkit-scrollbar {
+	display: none;
+}
+
+/* Hides scroll bar for IE, Edge, and Firefox */
+.channelBar__channels {
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+}
+
+.channelBar__addChannel {
+	cursor: pointer;
+}
+
+.channelBar__addChannel:hover {
+	color: white;
+}
+
+.channelBar__channelsHeader {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+	background-color: #2f3135; 
+	color: grey;
+}
+
+.channelBar__header {
+	display: flex;
+	align-items: center;
+}
+
+.channelBar__voice, 
+.channelBar__userProfile {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: grey;
+	background-color: #2f3135;
+	padding: 10px;
+	border-top: 1px solid grey;
+}
+
+.channelBar__voiceStatus {
+	flex: 1;
+	padding: 10px;
+}
+
+.channelBar__voiceSignalIcon {
+	color: #4fb185;
+}
+
+.channelBar__voiceStatus > h3 {
+	color: #4fb185;
+}
+
+.channelBar__voiceStatus > p {
+	font-size: smaller;
+}
+
+.channelBar__voiceInfoIcon {
+	padding: 5px;
+}
+
+.channelBar__voiceDisconnectIcon {
+	padding: 5px;
+}
+
+.channelBar__userProfileInfo {
+	flex: 1;
+	padding: 10px;
+}
+
+.channelBar__userProfileInfo > h3 {
+	color: white;
+}
+
+.channelBar__userProfileMuteIcon {
+	padding: 5px;
+}
+
+.channelBar__userProfileDeafenIcon {
+	padding: 5px;
+}
+
+.channelBar__userProfileSettingsIcon {
+	padding: 5px;
+}
